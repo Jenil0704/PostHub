@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white p-10">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[25%]">
+        <h2 class="text-3xl font-medium mt-4 mb-5 text-center">Login Account</h2>
+        <h3 class="text-lg font-medium">Demo : </h3>
+        <div class="flex gap-5 mb-5">
+        <p>Email : demo@gmail.com</p>
+        <p>Pass : demo123</p>
+        </div>
+            <form action="/login" method="post" class="flex flex-col gap-5">
+                <input class="py-3 px-3 bg-zinc-600 rounded-md outline-none border-none" type="email" placeholder="Email" name="email">
+                <input class="py-3 px-3 bg-zinc-600 rounded-md outline-none border-none" type="password" placeholder="Password" name="password">
+                <input class="py-3 px-3 bg-blue-500 rounded-md" type="submit" value="Login">
+                <h2 class="text-lg text-center">Don't have an account? <a class="text-blue-500" href="/register">Sign up</a></h2>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
